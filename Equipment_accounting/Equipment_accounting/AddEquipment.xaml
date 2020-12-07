@@ -1,0 +1,43 @@
+﻿<Window x:Class="Equipment_accounting.AddEquipment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Equipment_accounting"
+        mc:Ignorable="d"
+       Title="Добавление оборудования."  Height="692" Width="1279" WindowStartupLocation="CenterScreen" Background="#CDECF2">
+    <Grid>
+        <Rectangle Fill="#73D9F9" HorizontalAlignment="Left" Height="83"  VerticalAlignment="Top" Width="1279"/>
+        <Label Content="Добавление  оборудования" HorizontalAlignment="Left" Margin="441.88,14,0,0" VerticalAlignment="Top" FontSize="46" FontFamily="Times New Roman"/>
+
+        <DatePicker x:Name="dateDelDP"  HorizontalAlignment="Left" Margin="632,439,0,0" VerticalAlignment="Top" Width="311" Height="39" FontSize="22" FontFamily="Times New Roman" VerticalContentAlignment="Center" FirstDayOfWeek="Monday" BorderThickness="1"/>
+        <ComboBox  x:Name="providerCMB" HorizontalAlignment="Left" Margin="632,381,0,0" VerticalAlignment="Top" Width="311" Height="39" ItemsSource="{Binding  ProviderAdd}" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding name_provider}"></Label>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+
+        <ComboBox x:Name="title_equipCMB" HorizontalAlignment="Left" Margin="632,187,0,0" VerticalAlignment="Top" Width="310"  Height="39" ItemsSource="{Binding EquipmentAdd}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding title_equip}"></Label>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox x:Name="inventoryNumbTXTBox" HorizontalAlignment="Left"  Margin="632,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="311" Height="39" FontSize="20" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="serialNumbTxtBox" HorizontalAlignment="Left" Height="39" Margin="632,323,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="311" VerticalContentAlignment="Center" />
+        <Label Content="Введите наименование: " HorizontalAlignment="Left" Margin="386,187,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>
+        <Label Content="Введите инвентарный номер:" HorizontalAlignment="Left" Margin="342,256,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>
+        <Label Content="Введите серийный номер:" HorizontalAlignment="Left" Margin="371,323,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>
+        <Label Content="Введите поставщика:" HorizontalAlignment="Left" Margin="410,381,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>
+        <Label Content="Введите дату поставки:" HorizontalAlignment="Left" Margin="392,439,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>
+
+        <Button x:Name="addBtn" Content="Добавить" HorizontalAlignment="Left" Margin="663,536,0,0" VerticalAlignment="Top" Width="125" Click="addBtn_Click" Height="36" FontSize="20" Background="#AAC5CD" BorderBrush="#AAC5CD" FontFamily="Times New Roman"/>
+        <Button x:Name="cancelBTn" Content="Отмена" HorizontalAlignment="Left" Margin="523,536,0,0" VerticalAlignment="Top" Width="110" Click="cancelBTn_Click" Height="36" FontSize="20" Background="#AAC5CD" BorderBrush="#AAC5CD" FontFamily="Times New Roman"/>
+        <Button x:Name="backBtn" Content="Назад" HorizontalAlignment="Left" Margin="13,24,0,0" VerticalAlignment="Top" Width="110" Click="backBtn_Click" Height="36" FontSize="20" Background="#AAC5CD" BorderBrush="#AAC5CD" FontFamily="Times New Roman" />
+
+    </Grid>
+</Window>

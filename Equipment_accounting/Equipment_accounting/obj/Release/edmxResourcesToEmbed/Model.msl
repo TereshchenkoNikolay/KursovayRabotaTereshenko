@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище uchet_evmModelContainer" CdmEntityContainer="uchet_evmEntities">
+    <EntitySetMapping Name="brand">
+      <EntityTypeMapping TypeName="uchet_evmModel.brand">
+        <MappingFragment StoreEntitySet="brand">
+          <ScalarProperty Name="id_brand" ColumnName="id_brand" />
+          <ScalarProperty Name="name_brand" ColumnName="name_brand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="equipment">
+      <EntityTypeMapping TypeName="uchet_evmModel.equipment">
+        <MappingFragment StoreEntitySet="equipment">
+          <ScalarProperty Name="id_type_eq" ColumnName="id_type_eq" />
+          <ScalarProperty Name="title_equip" ColumnName="title_equip" />
+          <ScalarProperty Name="id_equipment" ColumnName="id_equipment" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="Id_brand" ColumnName="Id_brand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="main">
+      <EntityTypeMapping TypeName="uchet_evmModel.main">
+        <MappingFragment StoreEntitySet="main">
+          <ScalarProperty Name="id_main" ColumnName="id_main" />
+          <ScalarProperty Name="Id_equipment" ColumnName="Id_equipment" />
+          <ScalarProperty Name="id_provider" ColumnName="id_provider" />
+          <ScalarProperty Name="date_delivery" ColumnName="date_delivery" />
+          <ScalarProperty Name="date_add_to_db" ColumnName="date_add_to_db" />
+          <ScalarProperty Name="inventory_numb" ColumnName="inventory_numb" />
+          <ScalarProperty Name="serial_numb" ColumnName="serial_numb" />
+          <ScalarProperty Name="id_placement" ColumnName="id_placement" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="place">
+      <EntityTypeMapping TypeName="uchet_evmModel.place">
+        <MappingFragment StoreEntitySet="place">
+          <ScalarProperty Name="id_place" ColumnName="id_place" />
+          <ScalarProperty Name="name_place" ColumnName="name_place" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="placement">
+      <EntityTypeMapping TypeName="uchet_evmModel.placement">
+        <MappingFragment StoreEntitySet="placement">
+          <ScalarProperty Name="id_placement" ColumnName="id_placement" />
+          <ScalarProperty Name="id_place" ColumnName="id_place" />
+          <ScalarProperty Name="date_moving" ColumnName="date_moving" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="provider">
+      <EntityTypeMapping TypeName="uchet_evmModel.provider">
+        <MappingFragment StoreEntitySet="provider">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id_provider" ColumnName="id_provider" />
+          <ScalarProperty Name="name_provider" ColumnName="name_provider" />
+          <ScalarProperty Name="physical_address" ColumnName="physical_address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="type_users">
+      <EntityTypeMapping TypeName="uchet_evmModel.type_users">
+        <MappingFragment StoreEntitySet="type_users">
+          <ScalarProperty Name="id_type_users" ColumnName="id_type_users" />
+          <ScalarProperty Name="name_type_u" ColumnName="name_type_u" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="uchet_evmModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id_users" ColumnName="id_users" />
+          <ScalarProperty Name="fio_users" ColumnName="fio_users" />
+          <ScalarProperty Name="dateofbirth" ColumnName="dateofbirth" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id_type" ColumnName="id_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="type_equipment">
+      <EntityTypeMapping TypeName="uchet_evmModel.type_equipment">
+        <MappingFragment StoreEntitySet="type_equipment">
+          <ScalarProperty Name="type_type" ColumnName="type_type" />
+          <ScalarProperty Name="name_type" ColumnName="name_type" />
+          <ScalarProperty Name="id_type_equipment" ColumnName="id_type_equipment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

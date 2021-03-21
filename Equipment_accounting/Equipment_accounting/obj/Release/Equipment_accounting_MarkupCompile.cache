@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-A:\Учеба\Курсовая работа\Проект\Equipment_accounting\Equipment_accounting\obj\Release\
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\
 Equipment_accounting
 none
 false
 TRACE
-A:\Учеба\Курсовая работа\Проект\Equipment_accounting\Equipment_accounting\App.xaml
-7225493956
-2-1881755278
-24-2106023100
-192075868871
-AddEquipment.xaml;EditEquipmentWindow.xaml;infoWindow.xaml;MainWindow.xaml;recoverPassword.xaml;registationWindow.xaml;WorkingWindow.xaml;
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\App.xaml
+71945364115
+2482335943
+241952198608
+19-628169700
+Forms\AddEquipment.xaml;Forms\EditEquipmentWindow.xaml;Forms\infoWindow.xaml;MainWindow.xaml;Forms\recoverPassword.xaml;Forms\registationWindow.xaml;Forms\WorkingWindow.xaml;
 
 True
 

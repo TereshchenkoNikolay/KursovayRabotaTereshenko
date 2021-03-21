@@ -4,23 +4,14 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
+using Equipment_accounting.Model;
 namespace Equipment_accounting
 {
     /// <summary>
     /// Логика взаимодействия для recoverPassword.xaml
     /// </summary>
-     
+
     public partial class recoverPassword : Window
     {
         public List<users> UserListRec { get; set; }
@@ -31,17 +22,17 @@ namespace Equipment_accounting
         }
 
         private void sendbutton_Click(object sender, RoutedEventArgs e)
-        {/*
-            if (String.IsNullOrWhiteSpace(EmailForRecoverTxtbox.Text) )
+        {
+            if (String.IsNullOrWhiteSpace(EmailForRecoverTxtbox.Text))
             {
-                MessageBox.Show("Должны быть заполнены все поля ");
+                MessageBox.Show("Поле должно быть заполнено ");
                 return;
             }
-            foreach (users u in UserList)
+            foreach (users u in UserListRec)
             {
 
                 // отправитель - устанавливаем адрес и отображаемое в письме имя
-                MailAddress from = new MailAddress("moctt123@yandex.ru", "Nick");
+                MailAddress from = new MailAddress("tereshenkon.work@gmail.com", "Nick.Support");
                 // кому отправляем
                 MailAddress to = new MailAddress(EmailForRecoverTxtbox.Text);
                 // создаем объект сообщения
@@ -55,18 +46,19 @@ namespace Equipment_accounting
                 // письмо представляет код html
                 m.IsBodyHtml = true;
                 // адрес smtp-сервера и порт, с которого будем отправлять письмо
-                SmtpClient smtp = new SmtpClient("smtp.yandex.ru", 25);
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
                 // логин и пароль
                 smtp.EnableSsl = true;
-                smtp.Credentials = new NetworkCredential("moctt123@yandex.ru", "Rrr123rrr456");
-               
+                smtp.Credentials = new NetworkCredential("tereshenkon.work@gmail.com", "Rrr123rrr456");
+
                 smtp.Send(m);
                 MessageBox.Show("Сообщение отправлено");
                 this.Close();
                 Process.GetCurrentProcess().Kill();
-            */
-           
-            }  
+
+
+            }
         }
     }
+}
 

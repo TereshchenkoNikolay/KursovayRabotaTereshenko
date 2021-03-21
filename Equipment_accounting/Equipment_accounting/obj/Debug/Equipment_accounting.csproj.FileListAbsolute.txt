@@ -66,3 +66,37 @@ A:\Учеба\Курсовая работа\Проект\Equipment_accounting\Eq
 A:\Учеба\Курсовая работа\Проект\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csproj.CopyComplete
 A:\Учеба\Курсовая работа\Проект\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.exe
 A:\Учеба\Курсовая работа\Проект\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.pdb
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\Equipment_accounting.exe.config
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\Equipment_accounting.exe
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\Equipment_accounting.pdb
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\EntityFramework.dll
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\EntityFramework.SqlServer.dll
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\EntityFramework.xml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\EntityFramework.SqlServer.xml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\ru\EntityFramework.resources.dll
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csprojAssemblyReference.cache
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\AddEquipment.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\EditEquipmentWindow.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\infoWindow.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\MainWindow.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\recoverPassword.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\registationWindow.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\WorkingWindow.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\App.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting_Content.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting_MarkupCompile.cache
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting_MarkupCompile.lref
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\AddEquipment.baml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\EditEquipmentWindow.baml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\infoWindow.baml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\MainWindow.baml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\recoverPassword.baml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\registationWindow.baml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\WorkingWindow.baml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.g.resources
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.Properties.Resources.resources
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csproj.GenerateResource.cache
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csproj.CoreCompileInputs.cache
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csproj.CopyComplete
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.exe
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.pdb

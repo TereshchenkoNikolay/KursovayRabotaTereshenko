@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Equipment_accounting" xmlns:drawing="clr-namespace:System.Drawing;assembly=System.Drawing"
         mc:Ignorable="d"
         Title="Главное окно" Height="692" Width="1279" WindowStartupLocation="CenterScreen" WindowState="Maximized">
-
+<!--TODO:Адаптивная верстку сюдой-->
+    
     <Grid Background="#CDECF2">
 
         <Rectangle Fill="#73D9F9" HorizontalAlignment="Left" Height="83"  VerticalAlignment="Top" Width="1279"/>

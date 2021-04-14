@@ -16,7 +16,7 @@
 
         <Button x:Name="registation_button" Content="Регистрация" HorizontalAlignment="Left" Margin="650.75,413.83,0,0" VerticalAlignment="Top" Width="152.25" Height="36"  FontSize="20" FontFamily="Times New Roman" Click="registation_Click" Background="#AAC5CD" BorderBrush="#AAC5CD"/>
 
-        <Button x:Name="log_in" Content="Войти" HorizontalAlignment="Left" Margin="480.93,413.83,0,0" VerticalAlignment="Top" Width="140" Height="36" FontSize="20" FontFamily="Times New Roman" Click="log_in_Click"  Background="#AAC5CD" BorderBrush="#AAC5CD"/>
+        <Button x:Name="log_in" Content="Войти" HorizontalAlignment="Left" Margin="480.93,413.83,0,0" VerticalAlignment="Top" Width="140" Height="36" FontSize="20" FontFamily="Times New Roman" Click="log_in_Click"  Background="#AAC5CD" BorderBrush="#AAC5CD" IsDefault="True"/>
 
         <TextBox x:Name="EmailTextbox" HorizontalAlignment="Left" Height="40" Margin="489,268,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="317" BorderBrush="Black" FontSize="22" VerticalContentAlignment="Center"/>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="489.59,231,0,0" VerticalAlignment="Top" FontSize="20"/>

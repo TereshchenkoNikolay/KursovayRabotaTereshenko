@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using Equipment_accounting.Model;
+using Syncfusion.UI.Xaml.Grid.Converter;
 namespace Equipment_accounting
 {
     /// <summary>
@@ -26,7 +27,6 @@ namespace Equipment_accounting
         }
         private void typeCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
             Sort();
         }
         private void nameEquipTxtBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -35,7 +35,7 @@ namespace Equipment_accounting
         }
         private void placementCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+
             Sort();
         }
         private void inventoryNumbTxtBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -108,8 +108,8 @@ namespace Equipment_accounting
         }
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
-            
-            Helper.GoNextM(new AddEquipment(),this);
+
+            Helper.GoNextM(new AddEquipment(), this);
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -142,9 +142,9 @@ namespace Equipment_accounting
             if (Helper.CurrentUser.type_users.name_type_u == "administrator")
             {
                 main m = MainGrid.SelectedItem as main;
-            Helper.Connction.main.Remove(m);
-            Helper.Connction.SaveChanges();
-            MessageBox.Show("Оборудование удалено");
+                Helper.Connction.main.Remove(m);
+                Helper.Connction.SaveChanges();
+                MessageBox.Show("Оборудование удалено");
             }
             else MessageBox.Show("Недостаточно прав для выполнения данной операции. ");
 
@@ -155,7 +155,7 @@ namespace Equipment_accounting
             DataContext = null;
             DataContext = this;
         }
-
+        
         private void updateBTN_Click(object sender, RoutedEventArgs e)
         {
             MainGrid.Items.Refresh();
@@ -175,6 +175,13 @@ namespace Equipment_accounting
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNext(new MainWindow(), this);
+        }
+
+
+        private void ExportBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // var document = MainGrid.ExportToPdf();
+            //document.Save("Sample.pdf");
         }
     }
 }

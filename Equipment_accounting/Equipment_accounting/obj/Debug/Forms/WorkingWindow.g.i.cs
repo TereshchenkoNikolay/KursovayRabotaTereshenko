@@ -192,6 +192,14 @@ namespace Equipment_accounting {
         #line default
         #line hidden
         
+        
+        #line 81 "..\..\..\Forms\WorkingWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button ExportBtn;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -355,6 +363,15 @@ namespace Equipment_accounting {
             
             #line 72 "..\..\..\Forms\WorkingWindow.xaml"
             this.backBtn.Click += new System.Windows.RoutedEventHandler(this.backBtn_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 24:
+            this.ExportBtn = ((System.Windows.Controls.Button)(target));
+            
+            #line 81 "..\..\..\Forms\WorkingWindow.xaml"
+            this.ExportBtn.Click += new System.Windows.RoutedEventHandler(this.ExportBtn_Click);
             
             #line default
             #line hidden

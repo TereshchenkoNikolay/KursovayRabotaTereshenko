@@ -28,7 +28,7 @@
             </ComboBox.ItemTemplate>
         </ComboBox>
         <TextBox x:Name="inventoryNumbTXTBox" HorizontalAlignment="Left"  Margin="632,256,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="311" Height="39" FontSize="20" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="serialNumbTxtBox" HorizontalAlignment="Left" Height="39" Margin="632,323,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="311" VerticalContentAlignment="Center" />
+		<TextBox x:Name="serialNumbTxtBox" HorizontalAlignment="Left" Height="39" Margin="632,323,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="311" VerticalContentAlignment="Center"  FontSize="20"  FontFamily="Times New Roman"/>
         <Label Content="Введите наименование: " HorizontalAlignment="Left" Margin="386,187,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>
         <Label Content="Введите инвентарный номер:" HorizontalAlignment="Left" Margin="342,256,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>
         <Label Content="Введите серийный номер:" HorizontalAlignment="Left" Margin="371,323,0,0" VerticalAlignment="Top" FontSize="20"  FontFamily="Times New Roman"/>

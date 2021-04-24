@@ -20,7 +20,7 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTextColumn x:Name="type_DGTC" IsReadOnly="True" Header="Тип" Binding="{Binding equipment1.type_equipment.name_type}" FontFamily="Times New Roman" FontSize="17" ></DataGridTextColumn>
+                <DataGridTextColumn  x:Name="type_DGTC" IsReadOnly="True" Header="Тип" Binding="{Binding equipment1.type_equipment.name_type}" FontFamily="Times New Roman" FontSize="17" ></DataGridTextColumn>
                 <DataGridTextColumn x:Name="title_equipDGTC" IsReadOnly="True" Header="Наименование" Binding="{Binding equipment1.title_equip  }" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTextColumn  x:Name="inventory_numbDGTC" IsReadOnly="True" Header="Инвентарный номер" Binding="{Binding  inventory_numb}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTextColumn  x:Name="serial_numbDGTC" IsReadOnly="True" Header="Серийный номер"  Binding="{Binding  serial_numb}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
@@ -80,5 +80,9 @@
         <Label Content="Дата записи" HorizontalAlignment="Left" Margin="1105,120,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
         <Button x:Name="ExportBtn" Content="Экспорт данных" HorizontalAlignment="Left" Margin="990,238,0,0" VerticalAlignment="Top" Width="173" Height="36" Click="ExportBtn_Click" Background="#AAC5CD" BorderBrush="#AAC5CD" FontSize="20" FontFamily="Times New Roman"/>
 
-    </Grid>
+
+
+		
+
+	</Grid>
 </Window>

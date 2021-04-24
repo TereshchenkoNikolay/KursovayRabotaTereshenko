@@ -43,8 +43,7 @@ namespace Equipment_accounting
             {
                 AddEquip();
                 MessageBox.Show((title_equipCMB.SelectedItem as equipment).title_equip + "\tдобавлено в базу с инвентарным номером:\t" + inventoryNumbTXTBox.Text);
-                this.Close();
-
+                Helper.GoNext(new WorkingWindow(), this);
             }
             else MessageBox.Show("Добавление не удалось");
         }

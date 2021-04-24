@@ -74,7 +74,6 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\EntityFramework.xml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\EntityFramework.SqlServer.xml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\ru\EntityFramework.resources.dll
-A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csprojAssemblyReference.cache
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\AddEquipment.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\EditEquipmentWindow.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\infoWindow.g.cs
@@ -100,3 +99,8 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csproj.CopyComplete
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.exe
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.pdb
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\BouncyCastle.Crypto.dll
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\itextsharp.dll
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\itextsharp.xml
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csprojAssemblyReference.cache

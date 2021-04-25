@@ -44,10 +44,10 @@
             </DataGrid.Columns>
 
         </DataGrid>
-        <ComboBox x:Name="typeCmbBox"  HorizontalAlignment="Left" Margin="31,166,0,0" VerticalAlignment="Top" Height="24" Width="164" ItemsSource="{Binding TypeList}" SelectionChanged="typeCmbBox_SelectionChanged" FontFamily="Times New Roman" FontSize="20">
+		<ComboBox x:Name="typeCmbBox"   HorizontalAlignment="Left" Margin="31,166,0,0" VerticalAlignment="Top" Height="24" Width="164" ItemsSource="{Binding TypeList}" SelectionChanged="typeCmbBox_SelectionChanged" FontFamily="Times New Roman" FontSize="20" Padding="0">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
-                    <Label Content="{Binding name_type}" FontSize="14"></Label>
+					<Label Content="{Binding name_type}" FontSize="14" Padding="0" Margin="5,5,0,0"></Label>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
 
@@ -55,7 +55,7 @@
         <ComboBox x:Name="placementCmbBox" HorizontalAlignment="Left" Margin="779,166,0,0" VerticalAlignment="Top" Width="120"  Height="24" ItemsSource="{Binding PlaceList}" SelectionChanged="placementCmbBox_SelectionChanged" FontFamily="Times New Roman" FontSize="20">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
-                    <Label Content="{Binding name_place}" FontSize="14"></Label>
+					<Label Content="{Binding name_place}" FontSize="14" Padding="0" ></Label>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>

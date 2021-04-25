@@ -33,38 +33,35 @@ namespace Equipment_accounting
 
         private void typeCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
+            MainGrid.ItemsSource = Sort.FilterTypeList(MainList, (typeCmbBox.SelectedValue as type_equipment).name_type.ToString());
         }
         private void nameEquipTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
-            MainGrid.ItemsSource = Sort.FilterList(MainList, nameEquipTxtBox.Text);
-
+            MainGrid.ItemsSource = Sort.FilterTitleList(MainList, nameEquipTxtBox.Text);
         }
-
-        
-       
 
         private void placementCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+           
+            MainGrid.ItemsSource = Sort.FilterPlacementList(MainList, (placementCmbBox.SelectedValue as place).name_place.ToString());
 
-
+            
         }
         private void inventoryNumbTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainGrid.ItemsSource = Sort.FilterInvnubmList(MainList, inventoryNumbTxtBox.Text);
+            MainGrid.ItemsSource = Sort.FilterInventoryNumbList(MainList, inventoryNumbTxtBox.Text);
         }
         private void serialNumbTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            MainGrid.ItemsSource = Sort.FilterSerialNumbList(MainList, serialNumbTxtBox.Text);
         }
         private void delDateTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            MainGrid.ItemsSource = Sort.FilterDeliveryDateList(MainList, delDateTxtBox.Text);
         }
         private void addDateTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            MainGrid.ItemsSource = Sort.FilterAddDateList(MainList, addDateTxtBox.Text);
         }
 
         private void infoButton_Click(object sender, RoutedEventArgs e)
@@ -118,14 +115,16 @@ namespace Equipment_accounting
         }
         private void ResetFiltersBtn_Click(object sender, RoutedEventArgs e)
         {
-            MainList = Helper.Connction.main.ToList();
-            DataContext = null;
-            DataContext = this;
+            //MainGrid.ItemsSource = Helper.Connction.main.ToList();
+            //DataContext = null;
+            //DataContext = this;
+            placementCmbBox.ItemsSource = null;
+            MainGrid.ItemsSource = MainList;
+
         }
 
         private void updateBTN_Click(object sender, RoutedEventArgs e)
         {
-
             MainGrid.Items.Refresh();
         }
 
@@ -144,6 +143,8 @@ namespace Equipment_accounting
         {
             Helper.GoNext(new MainWindow(), this);
         }
+
+
         private void ExportBtn_Click(object sender, RoutedEventArgs e)
         {
 

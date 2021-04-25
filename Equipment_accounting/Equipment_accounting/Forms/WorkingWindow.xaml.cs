@@ -118,7 +118,7 @@ namespace Equipment_accounting
             //MainGrid.ItemsSource = Helper.Connction.main.ToList();
             //DataContext = null;
             //DataContext = this;
-            placementCmbBox.ItemsSource = null;
+            
             MainGrid.ItemsSource = MainList;
 
         }

@@ -33,35 +33,39 @@ namespace Equipment_accounting
 
         private void typeCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            MainGrid.ItemsSource = Sort.FilterTypeList(MainList, (typeCmbBox.SelectedValue as type_equipment).name_type.ToString());
+            if (typeCmbBox.SelectedIndex != -1)
+                MainGrid.ItemsSource = Sort.FilterTypeList(MainList, (typeCmbBox.SelectedValue as type_equipment).name_type.ToString());
         }
         private void nameEquipTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainGrid.ItemsSource = Sort.FilterTitleList(MainList, nameEquipTxtBox.Text);
+            if (nameEquipTxtBox.Text != null)
+                MainGrid.ItemsSource = Sort.FilterTitleList(MainList, nameEquipTxtBox.Text);
         }
 
         private void placementCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
-            MainGrid.ItemsSource = Sort.FilterPlacementList(MainList, (placementCmbBox.SelectedValue as place).name_place.ToString());
-
-            
+            if (placementCmbBox.SelectedIndex != -1)
+                MainGrid.ItemsSource = Sort.FilterPlacementList(MainList, (placementCmbBox.SelectedValue as place).name_place.ToString());
         }
         private void inventoryNumbTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainGrid.ItemsSource = Sort.FilterInventoryNumbList(MainList, inventoryNumbTxtBox.Text);
+            if (inventoryNumbTxtBox.Text != null)
+                MainGrid.ItemsSource = Sort.FilterInventoryNumbList(MainList, inventoryNumbTxtBox.Text);
         }
         private void serialNumbTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainGrid.ItemsSource = Sort.FilterSerialNumbList(MainList, serialNumbTxtBox.Text);
+            if (serialNumbTxtBox.Text != null)
+                MainGrid.ItemsSource = Sort.FilterSerialNumbList(MainList, serialNumbTxtBox.Text);
         }
         private void delDateTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainGrid.ItemsSource = Sort.FilterDeliveryDateList(MainList, delDateTxtBox.Text);
+            if (delDateTxtBox.Text != null)
+                MainGrid.ItemsSource = Sort.FilterDeliveryDateList(MainList, delDateTxtBox.Text);
         }
         private void addDateTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            MainGrid.ItemsSource = Sort.FilterAddDateList(MainList, addDateTxtBox.Text);
+            if (addDateTxtBox.Text != null)
+                MainGrid.ItemsSource = Sort.FilterAddDateList(MainList, addDateTxtBox.Text);
         }
 
         private void infoButton_Click(object sender, RoutedEventArgs e)
@@ -115,13 +119,16 @@ namespace Equipment_accounting
         }
         private void ResetFiltersBtn_Click(object sender, RoutedEventArgs e)
         {
-            //MainGrid.ItemsSource = Helper.Connction.main.ToList();
-            //DataContext = null;
-            //DataContext = this;
-            
+            addDateTxtBox.Text = "";
+            delDateTxtBox.Text = "";
+            nameEquipTxtBox.Text = "";
+            serialNumbTxtBox.Text = "";
+            inventoryNumbTxtBox.Text = "";
+            placementCmbBox.SelectedIndex = -1;
+            typeCmbBox.SelectedIndex = -1;
             MainGrid.ItemsSource = MainList;
-
         }
+
 
         private void updateBTN_Click(object sender, RoutedEventArgs e)
         {
@@ -147,7 +154,7 @@ namespace Equipment_accounting
 
         private void ExportBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Export.ExportPdf(MainGrid);
         }
     }
 }

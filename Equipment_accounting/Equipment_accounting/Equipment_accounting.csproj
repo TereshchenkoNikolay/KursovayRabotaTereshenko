@@ -77,7 +77,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Classes\ExportToPDFClass.cs" />
+    <Compile Include="Classes\Export.cs" />
     <Compile Include="Classes\Sort.cs" />
     <Compile Include="Forms\AddEquipment.xaml.cs">
       <DependentUpon>AddEquipment.xaml</DependentUpon>

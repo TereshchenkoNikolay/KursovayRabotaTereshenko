@@ -24,7 +24,7 @@
                 <DataGridTextColumn x:Name="title_equipDGTC" IsReadOnly="True" Header="Наименование" Binding="{Binding equipment1.title_equip  }" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTextColumn  x:Name="inventory_numbDGTC" IsReadOnly="True" Header="Инвентарный номер" Binding="{Binding  inventory_numb}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTextColumn  x:Name="serial_numbDGTC" IsReadOnly="True" Header="Серийный номер"  Binding="{Binding  serial_numb}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="name_placeDGTC" IsReadOnly="True" Header="Размещение(место)" Binding="{Binding  placement1.place.name_place}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="name_placeDGTC" IsReadOnly="True" Header="Размещение (место)" Binding="{Binding  placement1.place.name_place}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="date_deliveryDGTC"  IsReadOnly="True" Header="Дата поставки"  Binding="{Binding  date_delivery, StringFormat=dd/MM/yyyy}" FontFamily="Times New Roman" FontSize="18"></DataGridTextColumn>
                 <DataGridTextColumn  IsReadOnly="True" Header="Дата записи" Binding="{Binding  date_add_to_db, StringFormat=dd/MM/yyyy}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTemplateColumn>

@@ -154,7 +154,8 @@ namespace Equipment_accounting
 
         private void ExportBtn_Click(object sender, RoutedEventArgs e)
         {
-            Export.ExportPdf(MainGrid);
+            //Export.ExportPdf(MainGrid);
+             Export.ExportExcel(MainGrid);
         }
     }
 }

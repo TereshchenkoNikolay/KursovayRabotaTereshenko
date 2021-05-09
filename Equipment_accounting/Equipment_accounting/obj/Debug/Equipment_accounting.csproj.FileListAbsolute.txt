@@ -103,4 +103,3 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\BouncyCastle.Crypto.dll
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\itextsharp.dll
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\itextsharp.xml
-A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csprojAssemblyReference.cache

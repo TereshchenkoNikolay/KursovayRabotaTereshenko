@@ -15,12 +15,13 @@
                 <DataGridTemplateColumn >
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button    Content="Информация"  Name="infoButton" Margin="0" Click="infoButton_Click" FontFamily="Times New Roman" FontSize="17"/>
+                            <Button  Content="Информация"  Name="infoButton" Margin="0" Click="infoButton_Click" FontFamily="Times New Roman" FontSize="17"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTextColumn  x:Name="type_DGTC" IsReadOnly="True" Header="Тип" Binding="{Binding equipment1.type_equipment.name_type}" FontFamily="Times New Roman" FontSize="17" ></DataGridTextColumn>
+				<DataGridTextColumn  x:Name="type_DGTC" IsReadOnly="True" Header="Тип" Binding="{Binding equipment1.type_equipment.name_type}" FontFamily="Times New Roman" FontSize="17" >
+				</DataGridTextColumn>
                 <DataGridTextColumn x:Name="title_equipDGTC" IsReadOnly="True" Header="Наименование" Binding="{Binding equipment1.title_equip  }" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTextColumn  x:Name="inventory_numbDGTC" IsReadOnly="True" Header="Инвентарный номер" Binding="{Binding  inventory_numb}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
                 <DataGridTextColumn  x:Name="serial_numbDGTC" IsReadOnly="True" Header="Серийный номер"  Binding="{Binding  serial_numb}" FontFamily="Times New Roman" FontSize="17"></DataGridTextColumn>
@@ -78,11 +79,31 @@
         <Label Content="Размещение" HorizontalAlignment="Left" Margin="785,120,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
         <Label Content="Дата поставки" HorizontalAlignment="Left" Margin="947,120,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
         <Label Content="Дата записи" HorizontalAlignment="Left" Margin="1105,120,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Times New Roman"/>
-        <Button x:Name="ExportBtn" Content="Экспорт данных" HorizontalAlignment="Left" Margin="990,238,0,0" VerticalAlignment="Top" Width="173" Height="36" Click="ExportBtn_Click" Background="#AAC5CD" BorderBrush="#AAC5CD" FontSize="20" FontFamily="Times New Roman"/>
+		<ComboBox x:Name="ExportCmbBox"  Text="Экспорт данных" HorizontalAlignment="Left" Margin="990,238,0,0" VerticalAlignment="Top" Width="190" Height="36"    FontSize="20" FontFamily="Times New Roman" >
+			<ComboBoxItem >
+				<TextBlock Text="Экспорт данных"   Width="173"  Background="#AAC5CD" TextAlignment="Center"  Padding="5" ></TextBlock>
+			</ComboBoxItem>
+
+			<ComboBoxItem>
+				<Button x:Name="ExportPDfAndExcelBtn" Click="ExportPDfAndExcel_Click" Background="#AAC5CD" BorderBrush="#AAC5CD" Width="173"  Margin="0,2,0,0" Padding="0" >
+					<TextBlock Text="Экспорт в Excel  и PDF" TextWrapping="Wrap" TextAlignment="Center" />
+				</Button>
+			</ComboBoxItem>
+			<ComboBoxItem>
+				<Button x:Name="ExportPdfBtn" Click="ExportPdfBtn_Click" Background="#AAC5CD" BorderBrush="#AAC5CD" Padding="0" Margin="0,2,0,0" HorizontalAlignment="Center" Width="173" >
+					<TextBlock  Text="Экспорт в PDF " />
+				</Button>
+			</ComboBoxItem>
+			<ComboBoxItem>
+				<Button x:Name="ExportExcelBtn" Click="ExportExcelBtn_Click" Background="#AAC5CD" BorderBrush="#AAC5CD" Padding="0" Margin="0,2,0,0" HorizontalAlignment="Center" Width="173">
+					<TextBlock Text="Экспорт в Excel" />
+				</Button>
+			</ComboBoxItem>
+		</ComboBox>
 
 
 
-		
+
 
 	</Grid>
 </Window>

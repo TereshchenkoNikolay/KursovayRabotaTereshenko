@@ -27,7 +27,7 @@ namespace Equipment_accounting
             MainList = Helper.Connction.main.ToList();
             TypeList = Helper.Connction.type_equipment.ToList();
             PlaceList = Helper.Connction.place.ToList();
-
+            ExportCmbBox.SelectedIndex = 0;
             DataContext = this;
         }
 
@@ -151,11 +151,21 @@ namespace Equipment_accounting
             Helper.GoNext(new MainWindow(), this);
         }
 
-
-        private void ExportBtn_Click(object sender, RoutedEventArgs e)
+        private void ExportPDfAndExcel_Click(object sender, RoutedEventArgs e)
         {
-            //Export.ExportPdf(MainGrid);
-             Export.ExportExcel(MainGrid);
+
+            Export.ExportPdf(MainGrid);
+            Export.ExportExcel(MainGrid);
+        }
+
+        private void ExportPdfBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Export.ExportPdf(MainGrid);
+        }
+
+        private void ExportExcelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Export.ExportExcel(MainGrid);
         }
     }
 }

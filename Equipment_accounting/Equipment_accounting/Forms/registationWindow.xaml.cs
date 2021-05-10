@@ -9,7 +9,7 @@ namespace Equipment_accounting
     /// Логика взаимодействия для registationWindow.xaml
     /// </summary>
     public partial class registationWindow : Window
-    {
+    {//TODO:Адаптивная верстка
         public List<users> UserListReg { get; set; }
         users NewUser = new users();
         public registationWindow()

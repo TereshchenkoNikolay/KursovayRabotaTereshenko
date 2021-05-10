@@ -57,7 +57,17 @@ namespace Equipment_accounting
             //    Process.GetCurrentProcess().Kill();
 
 
-          //  }
+            //  }
+            MessageBoxImage icon = MessageBoxImage.Information;
+            MessageBoxButton button = MessageBoxButton.OK;
+            if(MessageBox.Show("Извините, в текущей версии программы отправить пароль Вам на почту невозможно, обратитесь к системному администратору вашей площадки. ", "Обращение", button, icon) == MessageBoxResult.OK){
+                Helper.GoNext(new MainWindow(), this);
+            }
+        }
+
+        private void backBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Helper.GoNext(new MainWindow(), this);
         }
     }
 }

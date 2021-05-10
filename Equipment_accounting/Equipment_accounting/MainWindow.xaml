@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Equipment_accounting" xmlns:drawing="clr-namespace:System.Drawing;assembly=System.Drawing"
         mc:Ignorable="d"
-        Title="Главное окно" Height="692" Width="1279" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+        Title="Главная" Height="692" Width="1279"  WindowState="Maximized">
 <!--TODO:Адаптивная верстку сюдой-->
     
     <Grid Background="#CDECF2">
 
         <Rectangle Fill="#73D9F9" HorizontalAlignment="Left" Height="83"  VerticalAlignment="Top" Width="1279"/>
         <Button x:Name="exit_button" Content="Выход" HorizontalAlignment="Left" Margin="1134,23,0,0" VerticalAlignment="Top" Width="110" Height="36" FontSize="20" FontFamily="Times New Roman" Click="exit_Click" Background="#AAC5CD" BorderBrush="#AAC5CD"/>
-        <Button x:Name="forget_password_button" Content="Забыли пароль?" HorizontalAlignment="Left" Margin="474,463,0,0" VerticalAlignment="Top" Width="158" Height="26"  FontSize="20" FontFamily="Times New Roman"   Click="forget_psw_Click" Background="#CDECF2" BorderBrush="#CDECF2"/>
+		<Button x:Name="forget_password_button" Content="Забыли пароль?" HorizontalAlignment="Left" Margin="474,463,0,0" VerticalAlignment="Top" Width="158" Height="26"  FontSize="20" FontFamily="Times New Roman"   Click="forget_psw_Click" Background="#CDECF2" BorderBrush="#CDECF2"/>
 
-        <Button x:Name="registation_button" Content="Регистрация" HorizontalAlignment="Left" Margin="650.75,413.83,0,0" VerticalAlignment="Top" Width="152.25" Height="36"  FontSize="20" FontFamily="Times New Roman" Click="registation_Click" Background="#AAC5CD" BorderBrush="#AAC5CD"/>
+		<Button x:Name="registation_button" Content="Регистрация" HorizontalAlignment="Left" Margin="650.75,413.83,0,0" VerticalAlignment="Top" Width="152.25" Height="36"  FontSize="20" FontFamily="Times New Roman" Click="registation_Click" Background="#AAC5CD" BorderBrush="#AAC5CD"/>
 
         <Button x:Name="log_in" Content="Войти" HorizontalAlignment="Left" Margin="480.93,413.83,0,0" VerticalAlignment="Top" Width="140" Height="36" FontSize="20" FontFamily="Times New Roman" Click="log_in_Click"  Background="#AAC5CD" BorderBrush="#AAC5CD" IsDefault="True"/>
 

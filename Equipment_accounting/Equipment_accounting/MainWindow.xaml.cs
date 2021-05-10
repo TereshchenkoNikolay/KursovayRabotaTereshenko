@@ -20,8 +20,8 @@ namespace Equipment_accounting
 
         private void forget_psw_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Извините, функционал находится в доработке.");
-            //Helper.GoNext(new recoverPassword(), this);
+           // MessageBox.Show("Извините, функционал находится в доработке.");
+            Helper.GoNext(new recoverPassword(), this);
         }
 
         private void exit_Click(object sender, RoutedEventArgs e)

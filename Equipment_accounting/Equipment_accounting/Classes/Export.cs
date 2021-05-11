@@ -12,6 +12,7 @@ namespace Equipment_accounting.Classes
     class Export
     {
         public static string dateToday = DateTime.Now.ToString("dd MMMM yyyy");
+        //Экспорт данных из MainGrid  в PDF файл
         public static void ExportPdf(DataGrid MainGrid)
         {
 
@@ -78,10 +79,10 @@ namespace Equipment_accounting.Classes
             doc.Close();
             MessageBox.Show("Pdf-документ сохранен");
         }
-        //TODO:Сделать экспорт в пдф в фоновом режиме
+        //TODO:Сделать экспорт в excel в фоновом режиме
+        //Экспорт данных из MainGrid  в Excel файл
         public static void ExportExcel(DataGrid MainGrid)
         {
-
             int headersCount = 7; //Количество столбцов с данными
             //string folderPath = "C:\\ExportData\\Excels\\";
             //if (!Directory.Exists(folderPath))

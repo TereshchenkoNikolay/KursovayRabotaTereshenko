@@ -43,6 +43,7 @@ namespace Equipment_accounting.Classes
             }
             return filter;
         }
+        //Фильтр по расположению
         public static List<main> FilterPlacementList(List<main> source, string placement)
         {
 

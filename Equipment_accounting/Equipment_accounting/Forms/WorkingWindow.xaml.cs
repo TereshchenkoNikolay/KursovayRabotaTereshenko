@@ -30,55 +30,63 @@ namespace Equipment_accounting
             ExportCmbBox.SelectedIndex = 0;
             DataContext = this;
         }
-
+      //Обработчик изменений в комбобоксе с типами оборудования 
         private void typeCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (typeCmbBox.SelectedIndex != -1)
                 MainGrid.ItemsSource = Sort.FilterTypeList(MainList, (typeCmbBox.SelectedValue as type_equipment).name_type.ToString());
         }
+        //Обработчик изменеий в поле ввода наименования 
         private void nameEquipTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (nameEquipTxtBox.Text != null)
                 MainGrid.ItemsSource = Sort.FilterTitleList(MainList, nameEquipTxtBox.Text);
         }
-
+        //Обработчик изменений в комбобоксе с местами расмещениями
         private void placementCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (placementCmbBox.SelectedIndex != -1)
                 MainGrid.ItemsSource = Sort.FilterPlacementList(MainList, (placementCmbBox.SelectedValue as place).name_place.ToString());
         }
+        ///Обработчик изменеий в поле ввода инвентарного номера
         private void inventoryNumbTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (inventoryNumbTxtBox.Text != null)
                 MainGrid.ItemsSource = Sort.FilterInventoryNumbList(MainList, inventoryNumbTxtBox.Text);
         }
+        //Обработчик изменеий в поле ввода серийного номера
         private void serialNumbTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (serialNumbTxtBox.Text != null)
                 MainGrid.ItemsSource = Sort.FilterSerialNumbList(MainList, serialNumbTxtBox.Text);
         }
+        //Обработчик изменеий в поле ввода даты доставки
         private void delDateTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (delDateTxtBox.Text != null)
                 MainGrid.ItemsSource = Sort.FilterDeliveryDateList(MainList, delDateTxtBox.Text);
         }
+       // Обработчик изменеий в поле ввода даты добавления
         private void addDateTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (addDateTxtBox.Text != null)
                 MainGrid.ItemsSource = Sort.FilterAddDateList(MainList, addDateTxtBox.Text);
         }
-
+        //Обработчик кнопки информации
         private void infoButton_Click(object sender, RoutedEventArgs e)
         {
+            //Передача информации в InfoWindow
             main m = MainGrid.SelectedItem as main;
             infoWindow iw = new infoWindow(m);
             iw.Show();
             iw.WindowState = WindowState.Normal;
         }
+        //Обработчик кнопки информации
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNextM(new AddEquipment(), this);
         }
+        //Обработчик загрузки окна
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
@@ -93,6 +101,7 @@ namespace Equipment_accounting
                 SaveBtn.Visibility = Visibility.Hidden;
             }
         }
+        //Обработчик кнопки редактирования
         private void editButton_Click(object sender, RoutedEventArgs e)
         {
             if (Helper.CurrentUser.type_users.name_type_u == "administrator")
@@ -105,10 +114,12 @@ namespace Equipment_accounting
             }
             else MessageBox.Show("Недостаточно прав для выполнения данной операции. ");
         }
+        //Обработчик кнопки удаления
         private void deleteButton_Click(object sender, RoutedEventArgs e)
         {
             if (Helper.CurrentUser.type_users.name_type_u == "administrator")
             {
+                
                 main m = MainGrid.SelectedItem as main;
                 Helper.Connction.main.Remove(m);
                 Helper.Connction.SaveChanges();
@@ -117,6 +128,7 @@ namespace Equipment_accounting
             else MessageBox.Show("Недостаточно прав для выполнения данной операции. ");
 
         }
+        //Обработчик кнопки сброса фильтров
         private void ResetFiltersBtn_Click(object sender, RoutedEventArgs e)
         {
             addDateTxtBox.Text = "";
@@ -129,12 +141,12 @@ namespace Equipment_accounting
             MainGrid.ItemsSource = MainList;
         }
 
-
+        //ОБработчик кнопки обновления таблицы
         private void updateBTN_Click(object sender, RoutedEventArgs e)
         {
             MainGrid.Items.Refresh();
         }
-
+        //Обработчик кнопки сохрания
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
             title_equipDGTC.IsReadOnly = true;
@@ -145,12 +157,12 @@ namespace Equipment_accounting
             Helper.Connction.SaveChanges();
             MessageBox.Show("Изменения сохранены.");
         }
-
+        //Обработчик кнопки возврата
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNext(new MainWindow(), this);
         }
-
+        //Обработчики кнопок экспорта
         private void ExportPDfAndExcel_Click(object sender, RoutedEventArgs e)
         {
 

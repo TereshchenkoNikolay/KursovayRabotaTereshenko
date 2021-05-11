@@ -17,19 +17,21 @@ namespace Equipment_accounting
             InitializeComponent();
             UserList = Helper.Connction.users.ToList();
         }
-
+        //Обработчик кнопки восстаноления пароля
         private void forget_psw_Click(object sender, RoutedEventArgs e)
         {
-           // MessageBox.Show("Извините, функционал находится в доработке.");
-            Helper.GoNext(new recoverPassword(), this);
+            MessageBoxImage icon = MessageBoxImage.Information;
+            MessageBoxButton button = MessageBoxButton.OK;
+            MessageBox.Show("Извините, в текущей версии программы отправить пароль Вам на почту невозможно, обратитесь к системному администратору вашей площадки. ", "Обращение", button, icon);
+            // Helper.GoNext(new recoverPassword(), this);
         }
-
+        //Обработчик кнопки выхода
         private void exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
             Process.GetCurrentProcess().Kill();
         }
-
+        //Обработчик кнопки авторизации
         private void log_in_Click(object sender, RoutedEventArgs e)
         {
             if (String.IsNullOrWhiteSpace(EmailTextbox.Text) || String.IsNullOrWhiteSpace(Password.Password))
@@ -46,13 +48,14 @@ namespace Equipment_accounting
                     Helper.GoNextM(new WorkingWindow(), this);
                     return;
                 }
-               else
+                else
                 {
                     MessageBox.Show("Email и/или пароль введен(ы) неверно! ");
                 }
             }
-            
+
         }
+        //Обработчик кнопки регистрации
         private void registation_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNextM(new registationWindow(), this);

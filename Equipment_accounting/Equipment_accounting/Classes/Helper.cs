@@ -11,10 +11,10 @@ namespace Equipment_accounting
 {
     public class Helper
     {
-        public static uchet_evmEntities Connction = new uchet_evmEntities();
-        public static users CurrentUser = new users();
+        public static uchet_evmEntities Connction = new uchet_evmEntities();//Инициализация модели данных
+        public static users CurrentUser = new users();//Текущий пользователь
 
-
+       // Переходы 
         public static void GoNext(Window nextWindow, Window oldWindow)
         {
             nextWindow.Show();

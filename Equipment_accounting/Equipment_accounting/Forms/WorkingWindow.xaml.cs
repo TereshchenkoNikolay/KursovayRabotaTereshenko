@@ -19,8 +19,6 @@ namespace Equipment_accounting
         public List<equipment> EquipmentList { get; set; }
         public List<users> UserList { get; set; }
 
-
-
         public WorkingWindow()
         {
             InitializeComponent();
@@ -30,7 +28,7 @@ namespace Equipment_accounting
             ExportCmbBox.SelectedIndex = 0;
             DataContext = this;
         }
-      //Обработчик изменений в комбобоксе с типами оборудования 
+        //Обработчик изменений в комбобоксе с типами оборудования 
         private void typeCmbBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (typeCmbBox.SelectedIndex != -1)
@@ -66,7 +64,7 @@ namespace Equipment_accounting
             if (delDateTxtBox.Text != null)
                 MainGrid.ItemsSource = Sort.FilterDeliveryDateList(MainList, delDateTxtBox.Text);
         }
-       // Обработчик изменеий в поле ввода даты добавления
+        // Обработчик изменеий в поле ввода даты добавления
         private void addDateTxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (addDateTxtBox.Text != null)
@@ -119,7 +117,6 @@ namespace Equipment_accounting
         {
             if (Helper.CurrentUser.type_users.name_type_u == "administrator")
             {
-                
                 main m = MainGrid.SelectedItem as main;
                 Helper.Connction.main.Remove(m);
                 Helper.Connction.SaveChanges();
@@ -140,7 +137,6 @@ namespace Equipment_accounting
             typeCmbBox.SelectedIndex = -1;
             MainGrid.ItemsSource = MainList;
         }
-
         //ОБработчик кнопки обновления таблицы
         private void updateBTN_Click(object sender, RoutedEventArgs e)
         {
@@ -163,18 +159,19 @@ namespace Equipment_accounting
             Helper.GoNext(new MainWindow(), this);
         }
         //Обработчики кнопок экспорта
+        //Экспорт и в пдф и эксель
         private void ExportPDfAndExcel_Click(object sender, RoutedEventArgs e)
         {
-
             Export.ExportPdf(MainGrid);
             Export.ExportExcel(MainGrid);
         }
-
+        //ЭКспортв пдф
         private void ExportPdfBtn_Click(object sender, RoutedEventArgs e)
         {
             Export.ExportPdf(MainGrid);
+            
         }
-
+        //Экспорт в эксель
         private void ExportExcelBtn_Click(object sender, RoutedEventArgs e)
         {
             Export.ExportExcel(MainGrid);

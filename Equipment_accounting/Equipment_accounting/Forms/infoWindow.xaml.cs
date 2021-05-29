@@ -38,7 +38,7 @@ namespace Equipment_accounting
         }
 
 
-
+        //Если пользователь кликает вне окна,оно закроется
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.Close();

@@ -11,19 +11,20 @@ namespace Equipment_accounting
     public partial class registationWindow : Window
     {//TODO:Адаптивная верстка
         public List<users> UserListReg { get; set; }
+        //Инициализция нового пользователя
         users NewUser = new users();
         public registationWindow()
         {
             InitializeComponent();
             UserListReg = Helper.Connction.users.ToList();
-          
-        }
 
+        }
+        //Кнопка отмены
         private void cancelBtn_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNext(new MainWindow(), this);
         }
-
+        //Кнопка подтверждения регистрации
         private void okBtn_Click(object sender, RoutedEventArgs e)
         {
             if (Checkuser())
@@ -36,9 +37,10 @@ namespace Equipment_accounting
             }
             else MessageBox.Show("Регистрации не случилось :(");
         }
+        //Добавление нового пользователя
         public void Addusers()
-        { 
-          
+        {
+
             NewUser.fio_users = FioTxtbox.Text;
             NewUser.email = EmailTxtbox.Text;
             NewUser.password = Password.Password;
@@ -51,6 +53,7 @@ namespace Equipment_accounting
             Helper.Connction.SaveChanges();
 
         }
+        //Проверка введеных данных на корректность
         bool Checkuser()
         {            //проверка символов пароля
             Regex reg = new Regex(@"^(?=.*[a-z])");
@@ -78,8 +81,6 @@ namespace Equipment_accounting
                 MessageBox.Show("Значения в полях \"Пароль\" и \"Подтверждение пароля\" не совпадают");
                 return false;
             }
-
-
             //Не занят ли логин
             foreach (users u in UserListReg)
             {
@@ -90,16 +91,15 @@ namespace Equipment_accounting
                     return false;
                 }
             }
-                return true;
-                
-            }
-
+            return true;
+        }
+        //Кнопка назад
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNext(new MainWindow(), this);
         }
     }
-    }
+}
 
 
 

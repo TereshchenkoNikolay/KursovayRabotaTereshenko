@@ -13,8 +13,7 @@ namespace Equipment_accounting
     {
         public static uchet_evmEntities Connction = new uchet_evmEntities();//Инициализация модели данных
         public static users CurrentUser = new users();//Текущий пользователь
-
-       // Переходы 
+               // Переход обычный
         public static void GoNext(Window nextWindow, Window oldWindow)
         {
             nextWindow.Show();
@@ -22,13 +21,14 @@ namespace Equipment_accounting
             oldWindow.Close();
 
         }
-
+        //Переход на максимальное окно
         public static void GoNextM(Window nextWindow, Window oldWindow)
         {
             nextWindow.Show();
             nextWindow.WindowState = WindowState.Maximized;
             oldWindow.Close();
         }
+        //Показать окно обычно
         public static void ShowW(Window nextWindow)
         {
             nextWindow.Show();

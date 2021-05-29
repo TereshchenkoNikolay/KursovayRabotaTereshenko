@@ -31,7 +31,7 @@ namespace Equipment_accounting
             ProviderAdd = Helper.Connction.provider.ToList();
             DataContext = this;
         }
-        
+        //Кнопка отмены
         private void cancelBTn_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNextM(new WorkingWindow(), this);
@@ -113,7 +113,7 @@ namespace Equipment_accounting
             Helper.Connction.main.Add(NewMain);
             Helper.Connction.SaveChanges();
         }
-
+        //КНопка перехода на форму назад
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNextM(new WorkingWindow(), this);

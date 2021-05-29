@@ -5,22 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Equipment_accounting"
         mc:Ignorable="d"
-        Title="Дополнительная информация"  Height="423" Width="476.02" MouseDown="Window_MouseDown" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" Background="#CDECF2">
-    <Grid>
-        <Label x:Name="idLbl" Content="Label" HorizontalAlignment="Left" Margin="203,69,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" VerticalContentAlignment="Center" FontSize="12" Width="42"/>
-        <Label x:Name="nameEquipLbl"  Content="Label" HorizontalAlignment="Left" Margin="203,112,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="12" Width="157"/>
-        <Label x:Name="typeEquipLbl" Content="Label" HorizontalAlignment="Left" Margin="203,152,0,0" VerticalAlignment="Top" Width="157" FontFamily="Times New Roman" FontSize="12"/>
-        <TextBlock  x:Name="descriptionEquipTxtBlock" HorizontalAlignment="Left" Margin="10,210,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="418" Height="75" FontFamily="Times New Roman" FontSize="12" />
-        <Label x:Name="placementLbl" Content="Label" HorizontalAlignment="Left" Margin="203,290,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <Label x:Name="datePlaceLbl" Content="Label" HorizontalAlignment="Left" Margin="203,330,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <Label Content="Номер в базе :" HorizontalAlignment="Left" Margin="102,67,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <Label Content="Наименование :" HorizontalAlignment="Left" Margin="93,110,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <Label Content="Тип :" HorizontalAlignment="Left" Margin="148,152,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="12" RenderTransformOrigin="0.537,0.153"/>
-        <Label Content="Характеристики :" HorizontalAlignment="Left" Margin="87,186,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <Label Content="Размещение :" HorizontalAlignment="Left" Margin="106,330,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <Label Content="Дата размещения :" HorizontalAlignment="Left" Margin="80,290,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"/>
-        <Rectangle Fill="#73D9F9" HorizontalAlignment="Left" Height="48" Width="469" Margin="0,0,0,0" Stroke="#73D9F9" VerticalAlignment="Top"  />
-        <Label Content="Дополнительная информация" HorizontalAlignment="Left" Margin="50,2,0,0" VerticalAlignment="Top" FontSize="26.8" FontFamily="Times New Roman" />
+        Title="Дополнительная информация"  Height="423" Width="403.333" MouseDown="Window_MouseDown" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" Background="#CDECF2">
+	<Grid>
+		<Label x:Name="idLbl" Content="Label" HorizontalAlignment="Left" Margin="148,73,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" VerticalContentAlignment="Center" FontSize="12" Width="43"/>
+		<Label x:Name="nameEquipLbl"  Content="Label" HorizontalAlignment="Left" Margin="148,116,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="161"/>
+		<Label x:Name="typeEquipLbl" Content="Label" HorizontalAlignment="Left" Margin="148,156,0,0" VerticalAlignment="Top" Width="161" FontFamily="Times New Roman" FontSize="14"/>
+		<TextBlock  x:Name="descriptionEquipTxtBlock" HorizontalAlignment="Left" Margin="27,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="352" Height="90" FontFamily="Times New Roman" FontSize="14" />
+		<Label x:Name="placementLbl" Content="Label" HorizontalAlignment="Left" Margin="148,309,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="161"/>
+		<Label x:Name="datePlaceLbl" Content="Label" HorizontalAlignment="Left" Margin="148,349,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="161"/>
+		<Label Content="Номер в базе :" HorizontalAlignment="Left" Margin="45,71,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="97"/>
+		<Label Content="Наименование :" HorizontalAlignment="Left" Margin="35,114,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="108"/>
+		<Label Content="Тип :" HorizontalAlignment="Left" Margin="95,159,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14"  Width="37"/>
+		<Label Content="Характеристики :" HorizontalAlignment="Left" Margin="29,190,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="118"/>
+		<Label Content="Размещение :" HorizontalAlignment="Left" Margin="49,349,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="92"/>
+		<Label Content="Дата размещения :" HorizontalAlignment="Left" Margin="22,309,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="124"/>
+		<Rectangle Fill="#73D9F9" HorizontalAlignment="Left" Height="48" Width="395" Margin="0,0,0,0" Stroke="#73D9F9" VerticalAlignment="Top"  />
+		<Label Content="Дополнительная информация" HorizontalAlignment="Left" Margin="22,5,0,0" VerticalAlignment="Top" FontSize="26.8" FontFamily="Times New Roman" />
 
-    </Grid>
+	</Grid>
 </Window>

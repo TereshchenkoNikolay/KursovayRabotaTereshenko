@@ -77,7 +77,7 @@ namespace Equipment_accounting.Classes
             doc.Add(table);
             //Закрываем документ
             doc.Close();
-            MessageBox.Show("Pdf-документ сохранен");
+            MessageBox.Show("Pdf-документ сохранен в C:\\ExportData\\PDF");
         }
         //TODO:Сделать экспорт в excel в фоновом режиме
         //Экспорт данных из MainGrid  в Excel файл

@@ -41,7 +41,6 @@ namespace Equipment_accounting
             }
             foreach (users u in UserList)
             {
-
                 if (u.email == EmailTextbox.Text && u.password == Password.Password)
                 {
                     Helper.CurrentUser = u;
@@ -53,13 +52,11 @@ namespace Equipment_accounting
                     MessageBox.Show("Email и/или пароль введен(ы) неверно! ");
                 }
             }
-
-        }
+                    }
         //Обработчик кнопки регистрации
         private void registation_Click(object sender, RoutedEventArgs e)
         {
             Helper.GoNextM(new registationWindow(), this);
         }
-
     }
 }

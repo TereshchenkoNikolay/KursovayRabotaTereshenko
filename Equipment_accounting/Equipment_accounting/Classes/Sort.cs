@@ -20,7 +20,6 @@ namespace Equipment_accounting.Classes
 
             return filter;
         }
-
         //Фильтр по инвентарному номеру
         public static List<main> FilterInventoryNumbList(List<main> source, string inventoryNumb)
         {
@@ -89,7 +88,7 @@ namespace Equipment_accounting.Classes
             }
             return filter;
         }
-        
+
     }
 }
 

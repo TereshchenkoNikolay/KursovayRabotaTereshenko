@@ -50,7 +50,8 @@ namespace Equipment_accounting
         //метод для проверки
         bool CheckEquip()
         {//пропущено обязательное поле
-            if (dateDelDP == null || inventoryNumbTXTBox.Text == "" || serialNumbTxtBox.Text == "" || title_equipCMB.SelectedItem == null || providerCMB.SelectedItem == null)
+            if (dateDelDP == null || inventoryNumbTXTBox.Text == "" || serialNumbTxtBox.Text == ""
+                || title_equipCMB.SelectedItem == null || providerCMB.SelectedItem == null)
             {
                 MessageBox.Show("Заполните все поля!!!");
                 return false;
@@ -59,7 +60,9 @@ namespace Equipment_accounting
             foreach (main m in MainListAdd)
             {
                 NewMain = m;
-                if (NewMain.inventory_numb == inventoryNumbTXTBox.Text || NewMain.serial_numb == serialNumbTxtBox.Text || NewMain.inventory_numb == inventoryNumbTXTBox.Text && NewMain.serial_numb == serialNumbTxtBox.Text)
+                if (NewMain.inventory_numb == inventoryNumbTXTBox.Text 
+                    || NewMain.serial_numb == serialNumbTxtBox.Text || NewMain.inventory_numb == inventoryNumbTXTBox.Text 
+                    && NewMain.serial_numb == serialNumbTxtBox.Text)
                 {
                     MessageBox.Show("Такое оборудование уже есть в базе!");
                     return false;

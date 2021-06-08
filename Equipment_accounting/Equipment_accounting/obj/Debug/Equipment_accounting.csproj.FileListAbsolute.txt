@@ -77,7 +77,6 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\AddEquipment.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\EditEquipmentWindow.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\infoWindow.g.cs
-A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\MainWindow.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\recoverPassword.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\registationWindow.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\WorkingWindow.g.cs
@@ -88,7 +87,6 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\AddEquipment.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\EditEquipmentWindow.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\infoWindow.baml
-A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\MainWindow.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\recoverPassword.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\registationWindow.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\WorkingWindow.baml
@@ -103,4 +101,5 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\BouncyCastle.Crypto.dll
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\itextsharp.dll
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin\Debug\itextsharp.xml
-A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Equipment_accounting.csprojAssemblyReference.cache
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\AuthorizationWindow.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Debug\Forms\AuthorizationWindow.baml

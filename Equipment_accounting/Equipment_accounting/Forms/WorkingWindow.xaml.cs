@@ -82,7 +82,7 @@ namespace Equipment_accounting
         //Обработчик кнопки информации
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
-            Helper.GoNextM(new AddEquipment(), this);
+            Helper.GoNext(new AddEquipment(), this);
         }
         //Обработчик загрузки окна
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -141,6 +141,7 @@ namespace Equipment_accounting
         private void updateBTN_Click(object sender, RoutedEventArgs e)
         {
             MainGrid.Items.Refresh();
+                    
         }
         //Обработчик кнопки сохрания
         private void SaveBtn_Click(object sender, RoutedEventArgs e)

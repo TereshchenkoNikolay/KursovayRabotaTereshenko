@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Setup"
+"ProjectName" = "8:Учет оборудования"
 "LanguageId" = "3:1049"
 "CodePage" = "3:1251"
 "UILanguageId" = "3:1049"
@@ -70,12 +70,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AB8656E75D9CDADD3C332476047A36FE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_ECFEE3E051894D83B8358C27D12CC309"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -103,6 +97,12 @@
         "OwnerKey" = "8:_087E34D411EA1D084B0DE7BA417809A7"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_AB8656E75D9CDADD3C332476047A36FE"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -111,7 +111,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\Setup.msi"
+        "OutputFilename" = "8:Debug\\Equpment_accounting.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -158,6 +158,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -428,16 +444,16 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Setup"
-        "ProductCode" = "8:{93F97DEC-B429-435A-A424-4BD1B43F3101}"
-        "PackageCode" = "8:{7D04EAFE-6D89-4943-865E-6F39427A2962}"
+        "ProductName" = "8:Equipment accounting"
+        "ProductCode" = "8:{6892DA98-C4FE-4D2A-8E13-E1566324A524}"
+        "PackageCode" = "8:{EEBE41D2-B2A6-444E-A07C-481394E490C8}"
         "UpgradeCode" = "8:{B04F6017-13D2-4D56-94E6-034F7058F16B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:ITSPBCT"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -445,7 +461,7 @@
         "Subject" = "8:"
         "ARPCONTACT" = "8:Tereshchenko N. "
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:Equipment accounting"
+        "ARPCOMMENTS" = "8:Учет оборудования"
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:_F3701C6F6251447A82F63F65FBBBB6A7"
         "ARPIconIndex" = "3:0"
@@ -979,7 +995,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_ECFEE3E051894D83B8358C27D12CC309"
             {
-            "SourcePath" = "8:..\\Equipment_accounting\\obj\\Debug\\Equipment_accounting.exe"
+            "SourcePath" = "8:..\\Equipment_accounting\\obj\\Release\\Equipment_accounting.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_E531588C596542D7A7DC4AECBD5BD0B9"

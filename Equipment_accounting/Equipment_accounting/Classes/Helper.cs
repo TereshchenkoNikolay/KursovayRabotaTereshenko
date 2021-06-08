@@ -18,6 +18,7 @@ namespace Equipment_accounting
         {
             nextWindow.Show();
             nextWindow.WindowState = WindowState.Normal;
+            
             oldWindow.Close();
 
         }
@@ -26,6 +27,7 @@ namespace Equipment_accounting
         {
             nextWindow.Show();
             nextWindow.WindowState = WindowState.Maximized;
+           
             oldWindow.Close();
         }
         //Показать окно обычно
@@ -33,6 +35,7 @@ namespace Equipment_accounting
         {
             nextWindow.Show();
             nextWindow.WindowState = WindowState.Normal;
+            nextWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
         }
     }
 }

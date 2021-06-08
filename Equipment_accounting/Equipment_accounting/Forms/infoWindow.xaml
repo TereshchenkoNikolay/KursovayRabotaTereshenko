@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Equipment_accounting"
         mc:Ignorable="d"
-        Title="Дополнительная информация"  Height="423" Width="403.333" MouseDown="Window_MouseDown" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" Background="#CDECF2">
+        Title="Дополнительная информация"  Height="423" Width="403.333" MouseDown="Window_MouseDown" WindowStartupLocation="CenterScreen" FontFamily="Times New Roman" Background="#CDECF2">
 	<Grid>
 		<Label x:Name="idLbl" Content="Label" HorizontalAlignment="Left" Margin="148,73,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" VerticalContentAlignment="Center" FontSize="12" Width="43"/>
 		<Label x:Name="nameEquipLbl"  Content="Label" HorizontalAlignment="Left" Margin="148,116,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="14" Width="161"/>

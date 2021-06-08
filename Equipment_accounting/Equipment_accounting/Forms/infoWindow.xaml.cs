@@ -36,8 +36,6 @@ namespace Equipment_accounting
             datePlaceLbl.Content = m.placement1.date_moving;
             DataContext = this;
         }
-
-
         //Если пользователь кликает вне окна,оно закроется
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -45,10 +43,5 @@ namespace Equipment_accounting
             return;
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-
-
-        }
     }
 }

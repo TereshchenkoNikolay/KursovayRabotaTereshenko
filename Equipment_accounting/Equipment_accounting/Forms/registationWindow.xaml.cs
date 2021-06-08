@@ -58,21 +58,22 @@ namespace Equipment_accounting
         {            //проверка символов пароля
             Regex reg = new Regex(@"^(?=.*[a-z])");
             Regex reg1 = new Regex(@"^(?=.*[A-Z])");
-
             Regex reg2 = new Regex(@"^(?=.*[1-9])");
             Regex reg3 = new Regex(@"^(?=.*[а-я])");
             Regex reg4 = new Regex(@"^(?=.*[А-Я])");
-
             //пропущено обязательное поле
-            if (FioTxtbox.Text == "" || EmailTxtbox.Text == "" || Password.Password == "" || confirmPassword.Password == "")
+            if (FioTxtbox.Text == "" || EmailTxtbox.Text == "" || Password.Password == ""
+                || confirmPassword.Password == "")
             {
                 MessageBox.Show("Заполните обязательные поля!!!");
                 return false;
             }
             //Неформатный  пароль
-            if (!reg.IsMatch(Password.Password.ToString()) || !reg1.IsMatch(Password.Password.ToString()) || !reg2.IsMatch(Password.Password.ToString()) || reg3.IsMatch(Password.Password.ToString()) || reg4.IsMatch(Password.Password.ToString()))
+            if (!reg.IsMatch(Password.Password.ToString()) || !reg1.IsMatch(Password.Password.ToString())
+                || !reg2.IsMatch(Password.Password.ToString()) || reg3.IsMatch(Password.Password.ToString()) || reg4.IsMatch(Password.Password.ToString()))
             {
-                MessageBox.Show("Пароль должен содержать < 8 символов и хотя бы одну заглавную букву , прописную букву и цифру");
+                MessageBox.Show("Пароль должен содержать < 8 символов и хотя бы одну заглавную букву , " +
+                    "прописную букву и цифру");
                 return false;
             }
             //пароли не совпадают

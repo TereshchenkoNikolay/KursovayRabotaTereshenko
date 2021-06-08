@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Equipment_accounting"
         mc:Ignorable="d"
-        Title="Регистрация" Height="692" Width="1279"  WindowState="Normal" Background="#CDECF2">
+        Title="Регистрация" Height="692" Width="1279"   WindowStartupLocation="CenterScreen" Background="#CDECF2">
     <Grid>
 		
         <Rectangle Fill="#73D9F9" HorizontalAlignment="Left" Height="83"  VerticalAlignment="Top" Width="1279"/>
-        <Label Content="Регистрация" HorizontalAlignment="Left"  Margin="510,13,0,0" VerticalAlignment="Top"  FontSize="46" FontFamily="Times New Roman"/>
-        <TextBox x:Name="FioTxtbox" HorizontalAlignment="Left" Height="39.14" Margin="550,160,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="309.75" FontFamily="Times New Roman"/>
-        <TextBox x:Name="EmailTxtbox" HorizontalAlignment="Left" Height="39.14" Margin="550,226,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="309.75" FontFamily="Times New Roman"/>
-        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="550,361,0,0" VerticalAlignment="Top" Width="309.75" Height="39.14" FontFamily="Times New Roman"/>
-        <PasswordBox x:Name="confirmPassword" HorizontalAlignment="Left" Margin="550,429,0,0" VerticalAlignment="Top" Width="309.75" Height="39.14" FontFamily="Times New Roman"/>
+        <Label Content="Регистрация" HorizontalAlignment="Left"  Margin="510,13,0,0" VerticalAlignment="Top"  FontSize="46" FontFamily="Times New Roman" />
+        <TextBox x:Name="FioTxtbox" HorizontalAlignment="Left" Height="39.14" Margin="550,160,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="309.75" FontFamily="Times New Roman" VerticalContentAlignment="Center"  FontSize="21"/>
+		<TextBox x:Name="EmailTxtbox" HorizontalAlignment="Left" Height="39.14" Margin="550,226,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="309.75" FontFamily="Times New Roman" VerticalContentAlignment="Center" FontSize="21"/>
+		<PasswordBox x:Name="Password" HorizontalAlignment="Left" Margin="550,361,0,0" VerticalAlignment="Top" Width="309.75" Height="39.14" FontFamily="Times New Roman" VerticalContentAlignment="Center" FontSize="21"/>
+		<PasswordBox x:Name="confirmPassword" HorizontalAlignment="Left" Margin="550,429,0,0" VerticalAlignment="Top" Width="309.75" Height="39.14" FontFamily="Times New Roman" VerticalContentAlignment="Center" FontSize="21"/>
         <DatePicker Name="dateofbirth" HorizontalAlignment="Left" Margin="550,294,0,0" VerticalAlignment="Top" Width="309.75" FirstDayOfWeek="Monday" Height="38" FontSize="22" VerticalContentAlignment="Center" FontFamily="Times New Roman" BorderBrush="Black"/>
 
         <Button x:Name="cancelBtn" Content="Отмена" HorizontalAlignment="Left" Margin="495,586,0,0" VerticalAlignment="Top" Width="133" Click="cancelBtn_Click" FontSize="20.42" Height="36.49" Background="#AAC5CD" BorderBrush="#AAC5CD" FontFamily="Times New Roman"/>
@@ -27,8 +27,5 @@
         <RadioButton  x:Name="adminRB" Content="Администратор" HorizontalAlignment="Left" Margin="469,495,0,0" VerticalAlignment="Top" FontSize="20.42" VerticalContentAlignment="Center" Height="26" Width="170" FontFamily="Times New Roman"/>
         <RadioButton x:Name="userRB" Content="Пользователь" HorizontalAlignment="Left" Margin="675,495,0,0" VerticalAlignment="Top" IsChecked="True" FontSize="20.42" VerticalContentAlignment="Center" Height="26" Width="160" FontFamily="Times New Roman"/>
         <Button x:Name="backBtn" Content="Назад" HorizontalAlignment="Left" Margin="13,24,0,0" VerticalAlignment="Top" Width="110" Click="backBtn_Click" Height="36" FontSize="20" Background="#AAC5CD" BorderBrush="#AAC5CD" FontFamily="Times New Roman" />
-
-
-
     </Grid>
 </Window>

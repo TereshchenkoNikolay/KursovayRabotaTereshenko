@@ -17,8 +17,7 @@ namespace Equipment_accounting.Classes
                 if (item.equipment1.title_equip.Contains(nameEquipment))
                     filter.Add(item);
             }
-
-            return filter;
+                        return filter;
         }
         //Фильтр по инвентарному номеру
         public static List<main> FilterInventoryNumbList(List<main> source, string inventoryNumb)

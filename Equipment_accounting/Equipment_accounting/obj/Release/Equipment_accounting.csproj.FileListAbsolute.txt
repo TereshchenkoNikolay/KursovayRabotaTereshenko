@@ -47,7 +47,6 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\bin
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\AddEquipment.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\EditEquipmentWindow.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\infoWindow.g.cs
-A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\MainWindow.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\recoverPassword.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\registationWindow.g.cs
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\WorkingWindow.g.cs
@@ -58,7 +57,6 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\AddEquipment.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\EditEquipmentWindow.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\infoWindow.baml
-A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\MainWindow.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\recoverPassword.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\registationWindow.baml
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\WorkingWindow.baml
@@ -70,3 +68,5 @@ A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Equipment_accounting.exe
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Equipment_accounting.pdb
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Equipment_accounting.csprojAssemblyReference.cache
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\AuthorizationWindow.g.cs
+A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\obj\Release\Forms\AuthorizationWindow.baml

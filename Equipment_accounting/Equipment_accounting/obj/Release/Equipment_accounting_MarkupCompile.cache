@@ -10,11 +10,11 @@ none
 false
 TRACE
 A:\Github\KursovayrabotaTereshenko\Equipment_accounting\Equipment_accounting\App.xaml
-71945364115
+7-509215248
 2482335943
-261565498040
+261173964187
 22660468355
-Forms\AddEquipment.xaml;Forms\EditEquipmentWindow.xaml;Forms\infoWindow.xaml;MainWindow.xaml;Forms\recoverPassword.xaml;Forms\registationWindow.xaml;Forms\WorkingWindow.xaml;
+Forms\AddEquipment.xaml;Forms\EditEquipmentWindow.xaml;Forms\infoWindow.xaml;Forms\AuthorizationWindow.xaml;Forms\recoverPassword.xaml;Forms\registationWindow.xaml;Forms\WorkingWindow.xaml;
 
 False
 
